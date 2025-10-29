@@ -17,7 +17,7 @@ defmodule TodosWeb.Router do
   scope "/", TodosWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    get "/", TodoController, :index
 
     resources "/todos", TodoController
   end
